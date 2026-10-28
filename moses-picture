@@ -1,0 +1,212 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101010">
+  <title>MOSES PICTURE | Photography & Films</title>
+  <meta name="description" content="MOSES PICTURE - Professional photography, videography and graphic design in Tanzania.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: #101010; color: #fff;
+      font-family: Arial, Helvetica, sans-serif; line-height: 1.6;
+    }
+    :root { --gold: #d6ad61; --muted: #b8b8b8; }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1120px, 90%); margin: auto; }
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: #101010f5; border-bottom: 1px solid #292929;
+    }
+    nav {
+      min-height: 76px; display: flex; align-items: center;
+      justify-content: space-between; gap: 20px;
+    }
+    .logo { font-size: 22px; font-weight: 900; letter-spacing: 2px; }
+    .logo span { color: var(--gold); }
+    .links { display: flex; gap: 24px; font-size: 13px; }
+    .links a:hover { color: var(--gold); }
+    .hero {
+      min-height: 570px; display: grid; align-items: center;
+      background: linear-gradient(90deg, #101010 5%, #101010d9 45%, #10101030),
+      url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1800&q=85') center/cover;
+    }
+    .hero-content { padding: 85px 0; max-width: 680px; }
+    .eyebrow { color: var(--gold); letter-spacing: 4px; font-size: 12px; font-weight: bold; }
+    h1 { font-size: clamp(42px, 7vw, 76px); line-height: 1.08; margin: 22px 0; }
+    h1 span { color: var(--gold); }
+    .hero p { max-width: 510px; color: #ddd; margin-bottom: 30px; }
+    .button {
+      display: inline-block; padding: 13px 22px; margin: 4px 8px 4px 0;
+      background: var(--gold); color: #101010; font-weight: bold;
+      border: 1px solid var(--gold); font-size: 13px;
+    }
+    .button.outline { background: transparent; color: white; border-color: #777; }
+    section { padding: 80px 0; }
+    .section-head { margin-bottom: 32px; }
+    .section-head h2 { font-size: clamp(28px, 4vw, 40px); margin: 8px 0; }
+    .section-head p { color: var(--muted); }
+    .portfolio { background: #171717; }
+    .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .photo { position: relative; overflow: hidden; background: #252525; }
+    .photo img { width: 100%; height: 300px; display: block; object-fit: cover; transition: transform .4s; }
+    .photo:hover img { transform: scale(1.05); }
+    .photo p { position: absolute; bottom: 0; padding: 30px 15px 14px; width: 100%;
+      background: linear-gradient(transparent, #000d); font-weight: bold; }
+    .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .service { border: 1px solid #353535; padding: 26px; }
+    .service .number { color: var(--gold); font-size: 13px; }
+    .service h3 { margin: 12px 0; font-size: 21px; }
+    .service p { color: var(--muted); font-size: 14px; }
+    .about { background: #171717; }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 45px; align-items: center; }
+    .about-grid img { width: 100%; max-height: 420px; object-fit: cover; }
+    .about-grid p { color: var(--muted); margin: 16px 0; }
+    .contact { text-align: center; }
+    .contact p { color: var(--muted); margin: 12px 0 25px; }
+    footer { border-top: 1px solid #303030; padding: 25px 0; color: #aaa; font-size: 12px; }
+    footer .container { display: flex; justify-content: space-between; gap: 15px; flex-wrap: wrap; }
+    @media (max-width: 720px) {
+      .links { gap: 12px; font-size: 11px; }
+      .logo { font-size: 17px; letter-spacing: 1px; }
+      .hero { min-height: 510px; }
+      .gallery, .services { grid-template-columns: 1fr 1fr; }
+      .photo img { height: 220px; }
+      .about-grid { grid-template-columns: 1fr; gap: 25px; }
+    }
+    @media (max-width: 440px) {
+      nav { align-items: flex-start; flex-direction: column; padding: 15px 0; }
+      .links { flex-wrap: wrap; }
+      .gallery, .services { grid-template-columns: 1fr; }
+      .photo img { height: 280px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav class="container">
+    <a class="logo" href="#home">MOSES <span>PICTURE</span></a>
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="eyebrow">PHOTOGRAPHY · FILMS · DESIGN</div>
+      <h1>YOUR MOMENTS.<br>OUR <span>VISION.</span></h1>
+      <p>We capture meaningful moments and transform ideas into powerful visual stories. Welcome to MOSES PICTURE.</p>
+      <a class="button" href="#portfolio">EXPLORE OUR WORK</a>
+      <a class="button outline" href="#contact">CONTACT US</a>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">SELECTED WORK</div>
+        <h2>Our Portfolio</h2>
+        <p>A collection of moments, stories and creative work.</p>
+      </div>
+      <div class="gallery">
+        <a class="photo" href="#contact">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=85" alt="Wedding photography">
+          <p>Wedding Photography</p>
+        </a>
+        <a class="photo" href="#contact">
+          <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=85" alt="Wedding celebration">
+          <p>Special Moments</p>
+        </a>
+        <a class="photo" href="#contact">
+          <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=85" alt="Professional camera">
+          <p>Creative Photography</p>
+        </a>
+        <a class="photo" href="#contact">
+          <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=85" alt="Live event">
+          <p>Events & Live Coverage</p>
+        </a>
+        <a class="photo" href="#contact">
+          <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=800&q=85" alt="Event production">
+          <p>Event Production</p>
+        </a>
+        <a class="photo" href="#contact">
+          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=85" alt="Creative workspace">
+          <p>Creative Projects</p>
+        </a>
+      </div>
+      <p style="color:#aaa;font-size:12px;margin-top:18px">Demo gallery: replace these sample photos with your own work.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">WHAT WE DO</div>
+        <h2>Our Services</h2>
+        <p>Creative services to bring your vision to life.</p>
+      </div>
+      <div class="services">
+        <div class="service">
+          <div class="number">01 / PHOTOGRAPHY</div>
+          <h3>Photography</h3>
+          <p>Wedding, graduation, portraits, events and professional photo sessions.</p>
+        </div>
+        <div class="service">
+          <div class="number">02 / VIDEOGRAPHY</div>
+          <h3>Videography</h3>
+          <p>Event coverage, cinematic films, promotional videos and social media content.</p>
+        </div>
+        <div class="service">
+          <div class="number">03 / DESIGN</div>
+          <h3>Graphic Design</h3>
+          <p>Logos, posters, banners, advertisements and visual brand identity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?auto=format&fit=crop&w=1000&q=85" alt="Photographer with camera">
+      <div>
+        <div class="eyebrow">ABOUT MOSES PICTURE</div>
+        <h2 style="font-size:36px;margin-top:12px">Every Picture Tells a Story.</h2>
+        <p>MOSES PICTURE is a creative brand focused on photography, videography and graphic design. We help people and businesses tell their stories through powerful visuals.</p>
+        <p>Our goal is to preserve your best moments and deliver creative work you can be proud of.</p>
+        <a class="button" href="#contact">LET'S WORK TOGETHER</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="eyebrow">HAVE A PROJECT IN MIND?</div>
+      <h2 style="font-size:clamp(30px,5vw,46px);margin-top:10px">Let's Create Something Great.</h2>
+      <p>Contact MOSES PICTURE to discuss your next project or book a session.</p>
+      <a class="button" href="https://wa.me/255788574290?text=Hello%20MOSES%20PICTURE%2C%20I%20would%20like%20to%20make%20an%20inquiry." target="_blank" rel="noopener">CHAT ON WHATSAPP</a>
+      <a class="button outline" href="https://www.instagram.com/moses_picture1/" target="_blank" rel="noopener">FOLLOW ON INSTAGRAM</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div>© <span id="year"></span> MOSES PICTURE. All rights reserved.</div>
+    <div>Photography · Videography · Graphic Design</div>
+  </div>
+</footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
